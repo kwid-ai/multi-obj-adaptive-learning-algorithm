@@ -9,7 +9,7 @@ This repository contains the novel adaptive algorithm that formulates personaliz
 ![image](adaptive%20algorithm.png)
 
 Adaptive Learning to select the optimal content $C^*$ is defined as:
-$$
+```math
 C^* = \arg\max_{c \in C} \Bigg[
     w_{ls} \cdot LS(c,st) \;+\;
     w_{d} \cdot D(c,st) \;+\;
@@ -17,7 +17,7 @@ C^* = \arg\max_{c \in C} \Bigg[
     w_{kg} \cdot KG(c,st) \;+\; \\
      w_{e} \cdot Eng(c, st)  \;+\;
     \beta \cdot \sqrt{\frac{\ln(N)}{N_c}}
-$$
+```
 
 
 The system dynamically selects optimal educational content by solving a real-time optimization problem, maximizing a weighted scoring function that synthesizes five key components:
