@@ -14,7 +14,7 @@ class AdaptiveLearningAlgorithm:
     """  
     Multi-Objective Adaptive Learning Algorithm.
       
-    Implements equation (18) from the paper:  
+    Implements equation (20) from the paper:  
     C* = argmax[wls·LS + wd·D + wcl·CL + wkg·KG + we·Eng + β·√(ln(N)/Nc)]
       
     Subject to pedagogical constraints.  
@@ -129,7 +129,7 @@ class AdaptiveLearningAlgorithm:
         knowledge_level: float  
     ) -> Tuple[float, Dict[str, float]]:  
         """  
-        Calculate total score for content (Equation 17).
+        Calculate total score for content.
           
         S(c,st,t) = Σ wi·fi(c,st,t) + E(c,st,t)  
         """  
